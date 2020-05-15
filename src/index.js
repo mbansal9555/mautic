@@ -2,6 +2,7 @@ const axios = require('axios')
 const {
   Contact,
   Segment,
+  Tag,
   Company
 } = require('./resources')
 
@@ -24,6 +25,7 @@ class Client {
     }
     this.contacts = new Contact(this)
     this.segments = new Segment(this)
+    this.tags = new Tag(this)
     this.companies = new Company(this)
   }
 
